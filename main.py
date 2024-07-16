@@ -59,8 +59,6 @@ def display_image(client, refined_story):
 api_key = st.secrets["OPENAI_SECRET"]
 client = OpenAI(api_key = api_key)
 
-
-
 with st.form("story_form"):
   st.write("This is for user to key in information.")
   msg = st.text_input(label="Some keywords to generate a story: ")
